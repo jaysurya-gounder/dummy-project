@@ -9,6 +9,7 @@ class calculator
 		System.out.println("2 For Subtraction");
 		System.out.println("3 For Multiplication");
 		System.out.println("4 For Division");
+		System.out.println("4 For Quotient");
 		Scanner in = new Scanner(System.in);
 		int a, b, ch;
 		System.out.println("Enter the no");
@@ -38,6 +39,12 @@ class calculator
 			System.out.println("Enter the no");
 			b= in.nextInt();
 			System.out.println("Division: "+(a/b));
+			break;
+		case 5 : System.out.print("Enter the no");
+			a = in.nextInt();
+			System.out.println("Enter the no");
+			b= in.nextInt();
+			System.out.println("Quotient: "+(a%b));
 			break;
 		default : System.out.print("invalid");
 			break;	
